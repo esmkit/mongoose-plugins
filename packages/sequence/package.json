@@ -33,7 +33,10 @@
     "build:esm": "bunx tsup",
     "example": "bun run --watch examples/index.ts"
   },
-  "dependencies": {},
+  "dependencies": {
+    "async": "^2.5.0",
+    "lodash": "^4.17.21"
+  },
   "devDependencies": {
     "@biomejs/biome": "^1.5.3",
     "@devjskit/copy-files": "^1.0.0",
