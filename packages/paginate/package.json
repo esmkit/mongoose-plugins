@@ -1,7 +1,7 @@
 {
   "name": "@esmkit/mongoose-paginate",
   "version": "0.1.0",
-  "description": "",
+  "description": "A custom pagination library for Mongoose with customizable labels.",
   "author": "Billgo <hi@billgo.me>",
   "bugs": "https://github.com/esmkit/mongoose-plugins/issues",
   "license": "MIT",

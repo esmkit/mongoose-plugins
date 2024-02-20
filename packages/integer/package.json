@@ -1,7 +1,7 @@
 {
   "name": "@esmkit/mongoose-integer",
   "version": "0.1.0",
-  "description": "",
+  "description": "A plugin to validate integer values within a Mongoose Schema.",
   "author": "Billgo <hi@billgo.me>",
   "bugs": "https://github.com/esmkit/mongoose-plugins/issues",
   "license": "MIT",

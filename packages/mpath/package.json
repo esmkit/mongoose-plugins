@@ -1,7 +1,7 @@
 {
   "name": "@esmkit/mongoose-mpath",
   "version": "0.1.0",
-  "description": "",
+  "description": "Mongoose plugin for tree hierarchy using the materialized path pattern.",
   "author": "Billgo <hi@billgo.me>",
   "bugs": "https://github.com/esmkit/mongoose-plugins/issues",
   "license": "MIT",
