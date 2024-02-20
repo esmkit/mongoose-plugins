@@ -340,10 +340,10 @@ function applyToChildren(schema, options) {
 	}
 }
 
-export default function (defaults) {
+export function pluginHidden(defaults) {
 	const _defaults = prepDefaults(defaults);
 
-	return function (schema, options) {
+	return (schema, options) => {
 		options = prepOptions(options, _defaults);
 		return plugin(schema, options);
 	};
