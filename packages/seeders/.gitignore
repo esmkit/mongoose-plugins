@@ -73,7 +73,6 @@ src/**/*.js.swp
 
 # MacOS files
 .DS_Store
-bin
 
 # typescript compiled code
 dist/

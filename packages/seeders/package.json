@@ -8,11 +8,20 @@
   "main": "dist/index.cjs",
   "module": "dist/index.mjs",
   "types": "dist/index.d.ts",
+  "directories": {
+    "templates": "templates",
+    "dist": "dist"
+  },
   "files": [
-    "dist",
+    "README.md",
+    "md-seed.js",
+    "templates",
     "types",
-    "README.md"
+    "dist"
   ],
+  "bin": {
+    "md-seed": "./md-seed.js"
+  },
   "exports": {
     ".": {
       "bun": "./dist/index.js",
@@ -33,7 +42,25 @@
     "build:esm": "bunx tsup",
     "example": "bun run --watch examples/index.ts"
   },
-  "dependencies": {},
+  "dependencies": {
+    "@babel/core": "^7.9.0",
+    "@babel/register": "^7.9.0",
+    "@babel/runtime": "^7.13.10",
+    "chalk": "^4.1.0",
+    "clui": "^0.3.6",
+    "command-line-args": "^5.1.1",
+    "command-line-commands": "^3.0.2",
+    "command-line-usage": "^6.1.1",
+    "core-js": "^3.9.1",
+    "find-root": "^1.1.0",
+    "inquirer": "^8.0.0",
+    "lodash": "^4.17.21",
+    "log-symbols": "^4.1.0",
+    "mem-fs": "^1.2.0",
+    "mem-fs-editor": "^8.0.0",
+    "regenerator-runtime": "^0.13.7",
+    "rxjs": "^6.6.6"
+  },
   "devDependencies": {
     "@biomejs/biome": "^1.5.3",
     "@devjskit/copy-files": "^1.0.0",
