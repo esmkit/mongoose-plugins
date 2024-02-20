@@ -1,0 +1,25 @@
+import { Seeder } from "@esmkit/mongoose-seeders";
+import { Model } from "../models";
+
+class <%= seederName %>Seeder extends Seeder {
+
+  async beforeRun() {
+    this.datas = this._generateDatas();
+  }
+
+  async shouldRun() {
+    return Model.countDocuments().exec().then(count => count === 0);
+  }
+
+  async run() {
+    return Model.create(this.datas);
+  }
+
+  _generateDatas() {
+    return [
+
+    ];
+  }
+}
+
+export default <%= seederName %>Seeder;

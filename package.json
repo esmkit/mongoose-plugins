@@ -1,0 +1,32 @@
+{
+  "private": true,
+  "name": "@esmkit/mongoose-plugins",
+  "description": "A set of plugins for mongoose.",
+  "version": "0.1.0",
+  "license": "MIT",
+  "author": "Billgo <hi@billgo.me>",
+  "bugs": "https://github.com/esmkit/mongoose-plugins/issues",
+  "scripts": {
+    "start": "bunx kill-port 4000 && bun --hot src/index.ts",
+    "publish": "bunx lerna publish --no-git-tag-version --no-push",
+    "build": "bunx lerna run build"
+  },
+  "workspaces": [
+    "packages/*"
+  ],
+  "devDependencies": {
+    "@biomejs/biome": "^1.9.4",
+    "@devjskit/biome-config": "^0.1.14",
+    "@devjskit/copy-files": "^1.0.0",
+    "@devjskit/cross-env": "^1.0.0",
+    "@devjskit/kill-port": "^1.0.0",
+    "@devjskit/rimraf": "^1.0.0",
+    "@types/bun": "^1.1.14",
+    "@types/node": "^22.10.1",
+    "@types/web": "^0.0.186",
+    "lerna": "^8.1.9",
+    "mongoose": "^8.8.4",
+    "tsup": "^8.3.5",
+    "typescript": "^5.7.2"
+  }
+}

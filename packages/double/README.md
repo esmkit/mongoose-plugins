@@ -1,0 +1,1 @@
+# @esmkit/mongoose-double

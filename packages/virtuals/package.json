@@ -1,0 +1,61 @@
+{
+  "name": "@esmkit/mongoose-virtuals",
+  "version": "0.3.5",
+  "description": "a virtual is a property that is not stored in MongoDB",
+  "author": "Billgo <hi@billgo.me>",
+  "bugs": "https://github.com/esmkit/mongoose-plugins/issues",
+  "license": "MIT",
+  "main": "dist/index.cjs",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist",
+    "types",
+    "README.md"
+  ],
+  "exports": {
+    ".": {
+      "bun": "./dist/index.js",
+      "node": "./dist/index.cjs",
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.cjs",
+      "default": "./dist/index.cjs"
+    }
+  },
+  "scripts": {
+    "prepublishOnly": "bun run build",
+    "test": "bun run test:functionality && bun run test:types",
+    "test:functionality": "bun test",
+    "test:types": "tsc --project tsconfig.test.json",
+    "build": "bunx rimraf dist && bun run build:esm && bun run build:bun",
+    "build:bun": "bun run bun.build.mjs",
+    "build:esm": "bunx tsup",
+    "example": "bun run --watch examples/index.ts"
+  },
+  "dependencies": {
+    "array.prototype.flat": "1.3.2",
+    "mpath": "^0.9.0"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "^1.9.4",
+    "@devjskit/biome-config": "^0.1.14",
+    "@devjskit/copy-files": "^1.1.0",
+    "@devjskit/kill-port": "^1.0.0",
+    "@devjskit/rimraf": "^1.0.0",
+    "@types/bun": "^1.1.14",
+    "@types/node": "^22.10.1",
+    "@types/web": "^0.0.186",
+    "mongoose": "^8.8.4",
+    "tsup": "^8.3.5",
+    "typescript": "^5.7.2"
+  },
+  "peerDependencies": {
+    "mongoose": "*"
+  },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/",
+    "access": "public"
+  },
+  "gitHead": "557cc47d73bacdc05f80ee0c2b20a0c672d305f0"
+}
