@@ -1,7 +1,7 @@
 {
   "name": "@esmkit/mongoose-virtuals",
   "version": "0.1.0",
-  "description": "",
+  "description": "a virtual is a property that is not stored in MongoDB",
   "author": "Billgo <hi@billgo.me>",
   "bugs": "https://github.com/esmkit/mongoose-plugins/issues",
   "license": "MIT",
@@ -42,8 +42,12 @@
     "@types/bun": "^1.0.5",
     "@types/node": "^20.10.6",
     "@types/web": "^0.0.132",
+    "mongoose": "^8.1.1",
     "tsup": "^8.0.1",
     "typescript": "^5.3.3"
+  },
+  "peerDependencies": {
+    "mongoose": "^5.7.9"
   },
   "publishConfig": {
     "registry": "https://registry.npmjs.org/",
