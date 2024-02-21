@@ -9,7 +9,7 @@ export default defineConfig({
 	splitting: false,
 	sourcemap: false,
 	treeshake: true,
-	minify: true,
+	minify: false,
 	clean: true,
 	dts: true,
 	outExtension: ({ format }) => ({
