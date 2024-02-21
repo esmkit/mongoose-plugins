@@ -1,6 +1,6 @@
 {
   "name": "@esmkit/mongoose-sequence",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "A plugin lets you create fields which autoincrement their value",
   "author": "Billgo <hi@billgo.me>",
   "bugs": "https://github.com/esmkit/mongoose-plugins/issues",
@@ -50,7 +50,7 @@
     "typescript": "^5.3.3"
   },
   "peerDependencies": {
-    "mongoose": "^5.7.9"
+    "mongoose": ">=5.7.9"
   },
   "publishConfig": {
     "registry": "https://registry.npmjs.org/",
