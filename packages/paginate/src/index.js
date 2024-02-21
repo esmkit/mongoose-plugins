@@ -25,7 +25,7 @@ const defaultOptions = {
 	forceCountFn: false,
 };
 
-export function paginate(query, options, callback) {
+export function mongoosePaginate(query, options, callback) {
 	options = {
 		...defaultOptions,
 		...paginate.options,
@@ -224,5 +224,5 @@ export function paginate(query, options, callback) {
 }
 
 export default (schema) => {
-	schema.statics.paginate = paginate;
+	schema.statics.paginate = mongoosePaginate;
 };

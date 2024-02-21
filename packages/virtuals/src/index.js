@@ -3,7 +3,7 @@ import flat from "array.prototype.flat";
 
 const documentParentsMap = new WeakMap();
 
-export default function mongooseLeanVirtuals(schema) {
+export default function mongooseVirtuals(schema) {
 	const fn = attachVirtualsMiddleware(schema);
 	schema.pre("find", function () {
 		if (typeof this.map === "function") {

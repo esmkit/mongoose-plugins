@@ -340,7 +340,7 @@ function applyToChildren(schema, options) {
 	}
 }
 
-export function pluginHidden(defaults) {
+export function mongooseHidden(defaults) {
 	const _defaults = prepDefaults(defaults);
 
 	return (schema, options) => {

@@ -1,6 +1,6 @@
 {
   "name": "@esmkit/mongoose-sequence",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "A plugin lets you create fields which autoincrement their value",
   "author": "Billgo <hi@billgo.me>",
   "bugs": "https://github.com/esmkit/mongoose-plugins/issues",

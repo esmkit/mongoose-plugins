@@ -1,6 +1,6 @@
 {
   "name": "@esmkit/mongoose-passport",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Passport-Local Mongoose is a Mongoose plugin that simplifies building username and password login with Passport.",
   "author": "Billgo <hi@billgo.me>",
   "bugs": "https://github.com/esmkit/mongoose-plugins/issues",

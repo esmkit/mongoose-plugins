@@ -1,6 +1,6 @@
 {
   "name": "@esmkit/mongoose-schedule",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "A plugin to validate Schedule values within a Mongoose Schema.",
   "author": "Billgo <hi@billgo.me>",
   "bugs": "https://github.com/esmkit/mongoose-plugins/issues",

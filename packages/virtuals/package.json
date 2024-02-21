@@ -1,6 +1,6 @@
 {
   "name": "@esmkit/mongoose-virtuals",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "a virtual is a property that is not stored in MongoDB",
   "author": "Billgo <hi@billgo.me>",
   "bugs": "https://github.com/esmkit/mongoose-plugins/issues",

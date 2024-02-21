@@ -63,7 +63,7 @@ mpathUtil.listToTree = (list, sort) => {
  * @param  {Schema} schema  Mongoose Schema
  * @param  {Object} options [description]
  */
-export function pluginMpath(schema, options) {
+export function mongooseMpath(schema, options) {
 	const onDelete = (options && options.onDelete) || "REPARENT"; // or 'DELETE'
 	const idType = (options && options.idType) || Schema.ObjectId;
 	const pathSeparator = (options && options.pathSeparator) || "#";
