@@ -1,28 +1,18 @@
 {
   "name": "@esmkit/mongoose-hidden",
-  "version": "0.3.5",
+  "version": "0.3.7",
   "description": "A Mongoose schema plugin that hooks into toJSON() and toObject() to allow hiding of properties you do not want sent client-side, like passwords and other secrets and sensitive information.",
   "author": "Billgo <hi@billgo.me>",
   "bugs": "https://github.com/esmkit/mongoose-plugins/issues",
   "license": "MIT",
   "main": "dist/index.cjs",
   "module": "dist/index.mjs",
-  "types": "dist/index.d.ts",
+  "types": "types/index.d.ts",
   "files": [
     "dist",
     "types",
     "README.md"
   ],
-  "exports": {
-    ".": {
-      "bun": "./dist/index.js",
-      "node": "./dist/index.cjs",
-      "types": "./dist/index.d.ts",
-      "import": "./dist/index.mjs",
-      "require": "./dist/index.cjs",
-      "default": "./dist/index.cjs"
-    }
-  },
   "scripts": {
     "prepublishOnly": "bun run build",
     "test": "bun run test:functionality && bun run test:types",
